@@ -24,12 +24,10 @@ public class Exersice {
   }
   @GetMapping("/check/status")
   public String getstatuse(){
-        boolean a=false;
-        if (a==true){
-       return "evrey thing is ok"; }
-        else {
-            return "not evrey thing is ok";
-        }
+     
+   
+       return "evrey thing is ok"; 
+    
   }
 
 
@@ -37,13 +35,9 @@ public class Exersice {
 //            return array of names
   @GetMapping("/health")
   public String health(){
-        boolean server_work=false;
-        if (server_work==true){
+      
             return "Server health is up and running";
-        }
-        else {
-            return "not server work";
-        }
+      
   }
 @GetMapping("/names")
     public String[] getMyArray() {
